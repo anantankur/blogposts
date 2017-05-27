@@ -126,7 +126,7 @@ We'll first copy our configuration files from the server.
 `sudo chown -R $USER:$USER /etc/openvpn/vpnserver`  
 `sudo chmod 0755 /etc/openvpn/vpnserver`  
 `scp root@server_IP:/etc/openvpn/easy-rsa/keys/clientname.key /etc/openvpn/vpnserver/clientname.key`  
-`scp root@server_IP:/etc/openvpn/easy-rsa/keys/clientname.crt /etc/openvpn/vpnserver/clientname.crt`
+`scp root@server_IP:/etc/openvpn/easy-rsa/keys/clientname.crt /etc/openvpn/vpnserver/clientname.crt`  
 `scp root@server_IP:/etc/openvpn/easy-rsa/keys/ca.crt /etc/openvpn/vpnserver/ca.crt`  
 `sudo chmod 0644 /etc/openvpn/vpnserver/*`
 
