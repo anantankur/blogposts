@@ -120,7 +120,7 @@ First we need to verify that all the required packages are installed. Those are:
 * `networkmanager-openvpn`
 * `nm-connection-editor`
 
-We'll first copy our configuration files from the server.
+We'll then copy our configuration files from the server.
 
 `sudo mkdir /etc/openvpn/vpnserver`  
 `sudo chown -R $USER:$USER /etc/openvpn/vpnserver`  
