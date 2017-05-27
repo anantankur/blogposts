@@ -108,7 +108,7 @@ Apply the sysctl setttings and start the server.
 `chkconfig openvpn on`
 
 Now the VPN server should be up and running. On Aruba Cloud, all unused ports are closed by default to improve security. If that's the case with your VPS as well, tell iptables to allow OpenVPN connections.  
-`iptables -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPT`  
+`iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPT`  
 `service iptables save`
 
 #### Client setup - Linux
